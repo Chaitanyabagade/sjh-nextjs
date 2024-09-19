@@ -12,7 +12,9 @@ import Link from 'next/link';
 
 const Navbar = () => {
 
+ 
     const navitem = [["Home", "/"], ["About", "./About"], ["Login", "./Login"], ["Vision", "./Vision"], ["Mission", "./Mission"]];
+
     
 
 
