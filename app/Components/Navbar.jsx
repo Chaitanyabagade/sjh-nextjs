@@ -13,7 +13,7 @@ import Link from 'next/link';
 const Navbar = () => {
 
     const navitem = [["Home", "/"], ["About", "./About"], ["Login", "./Login"], ["Vision", "./Vision"], ["Mission", "./Mission"]];
-  
+    
 
 
     const [nav, setNav] = useState(0);
@@ -73,7 +73,7 @@ const Navbar = () => {
                     <ul className='flex my-[7px] '>
                         {
                             navitem.map((item, index) => (
-                                <Link href={item[1]} ><li key={index} className='mx-5 font-semibold text-[25px] text-center hover:text-orange-500 cursor-pointer '>{item[0]}</li></Link>
+                                <Link href={item[1]} key={index} ><li key={index} className='mx-5 font-semibold text-[25px] text-center hover:text-orange-500 cursor-pointer '>{item[0]}</li></Link>
                             ))
                         }
                     </ul>
@@ -85,7 +85,7 @@ const Navbar = () => {
                 <ul className=' '>
                     {
                         navitem.map((item, index) => (
-                            <Link href={item[1]} ><li key={index} style={{ borderBottom: "2px solid orange" }} className='mx-3 font-semibold text-[20px] py-3 px-3 sm:px-5 lg:px-8  hover:text-orange-500 cursor-pointer ' > <button onClick={sidenavset}>{item[0]}</button></li></Link>
+                            <Link href={item[1]} key={index} ><li key={index} style={{ borderBottom: "2px solid orange" }} className='mx-3 font-semibold text-[20px] py-3 px-3 sm:px-5 lg:px-8  hover:text-orange-500 cursor-pointer ' > <button onClick={sidenavset}>{item[0]}</button></li></Link>
                         ))
                     }
                 </ul>
