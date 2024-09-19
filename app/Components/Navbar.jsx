@@ -18,7 +18,7 @@ const Navbar = () => {
     
 
 
-    const [nav, setNav] = useState(0);
+    const [nav, setNav] = useState(0); 
     const [cart, setCart] = useState(0);
     const [totalamt, settotalamt] = useState(0);
     const [devWidth, setDevWidth] = useState(0);
@@ -80,7 +80,7 @@ const Navbar = () => {
                         }
                     </ul>
                 </div>
-                <div className="logo w-[45px] h-[45px] my-[2.5px] mx-3 "><Image className="rounded-full border-[2px] border-white" src={logo}></Image></div>
+                <div className="logo w-[45px] h-[45px] my-[2.5px] mx-3 "><Image className="rounded-full border-[2px] border-white" src={logo} alt="img"></Image></div>
                
             </div>
             {<div style={{ float: "left" }} className={nav ? "w-fit mx-0 fixed z-1  bg-gray-900 text-white  my-[50px]" : "w-fit fixed bg-gray-900 z-1 text-white mx-[-500px] my-[50px]"}>
