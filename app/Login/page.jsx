@@ -2,17 +2,26 @@
 export default function Login() {
     return (
     <div className="w-[100%] h-[100vh] loginpage">
-      <div  className="flex items-center justify-center min-h-screen  ">
+      <div  className="flex items-center justify-center min-h-screen  mt-[-100px] lg:mt-[0px] p-5 ">
         <div className="w-full max-w-md p-8 space-y-6 bg-white rounded-lg shadow-md">
           <h2 className="text-2xl font-bold text-center">Login</h2>
           <form className="space-y-4">
             <div>
-              <label className="block text-sm font-medium text-gray-700">Email</label>
+              <label className="block text-sm font-medium text-gray-700">User ID</label>
               <input
-                type="email"
+                type="text"
                 required
                 className="mt-1 block w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                placeholder="Enter your email"
+                placeholder="Enter your user id"
+              />
+            </div>
+            <div>
+              <label className="block text-sm font-medium text-gray-700">Mobile no.</label>
+              <input
+                type="text"
+                required
+                className="mt-1 block w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                placeholder="Enter your mobile no."
               />
             </div>
             <div>
@@ -31,9 +40,7 @@ export default function Login() {
               Login
             </button>
           </form>
-          <p className="text-center text-sm text-gray-600">
-            Do not have an account? <a href=''className="text-blue-600 hover:underline">Sign up</a>
-          </p>
+        
         </div>
       </div>
       </div>
